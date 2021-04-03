@@ -1,0 +1,25 @@
+package hierarchy;
+
+public class Hair_dryer extends Hair_styling_techniques{
+    private String Model;
+    public String getModel(){return Model;}
+    private boolean Cold_air_supply;
+    public String getCold_air_supply(){if (Cold_air_supply==true) return "есть"; else return "нет";}
+    private boolean Diffuser_nozzle;
+    public String getDiffuser_nozzle(){if (Diffuser_nozzle==true) return "есть"; else return "нет";}
+    public void getDescription()
+    {
+        System.out.printf("%s \n\t Подача холодного воздуха: %s \n\t Насадка-диффузор: %s ",
+                getModel(),getCold_air_supply(), getDiffuser_nozzle());
+        super.getDescription();
+    }
+    public Hair_dryer(String model, boolean cold_air_supply, boolean diffuser_nozzle,
+                      String ionization, int number_of_modes, String manufacturer,String colour,
+                                   double weight, String material)
+    {
+        super(ionization, number_of_modes, manufacturer, colour, weight, material);
+        Model=model;
+        Cold_air_supply=cold_air_supply;
+        Diffuser_nozzle=diffuser_nozzle;
+    }
+}

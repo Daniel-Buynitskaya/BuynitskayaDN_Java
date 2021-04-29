@@ -15,9 +15,9 @@ public class Microwave extends Appliances_for_cooking{
     }
     public Microwave(String model, boolean grill, boolean automatic_defrosting, String control_type,
                  boolean timer_display, String manufacturer,String colour,
-                 double weight, String material)
+                 double weight, String material, double cost, int guarantee)
     {
-        super(control_type, timer_display, manufacturer, colour, weight, material);
+        super(control_type, timer_display, manufacturer, colour, weight, material, cost, guarantee);
         Model=model;
         Grill=grill;
         Automatic_defrosting=automatic_defrosting;

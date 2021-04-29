@@ -17,9 +17,9 @@ public class Hair_straightener extends Hair_styling_techniques{
     }
     public Hair_straightener(String model, String plate_coating, boolean floating_plates, double plate_width,
                       String ionization, int number_of_modes, String manufacturer,String colour,
-                      double weight, String material)
+                      double weight, String material, double cost, int guarantee)
     {
-        super(ionization, number_of_modes, manufacturer, colour, weight, material);
+        super(ionization, number_of_modes, manufacturer, colour, weight, material, cost, guarantee);
         Model=model;
         Plate_coating=plate_coating;
         Floating_plates=floating_plates;

@@ -15,9 +15,9 @@ public class Hair_dryer extends Hair_styling_techniques{
     }
     public Hair_dryer(String model, boolean cold_air_supply, boolean diffuser_nozzle,
                       String ionization, int number_of_modes, String manufacturer,String colour,
-                                   double weight, String material)
+                                   double weight, String material, double cost, int guarantee)
     {
-        super(ionization, number_of_modes, manufacturer, colour, weight, material);
+        super(ionization, number_of_modes, manufacturer, colour, weight, material, cost,guarantee);
         Model=model;
         Cold_air_supply=cold_air_supply;
         Diffuser_nozzle=diffuser_nozzle;

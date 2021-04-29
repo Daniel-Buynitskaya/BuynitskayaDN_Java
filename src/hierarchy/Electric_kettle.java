@@ -16,9 +16,9 @@ public class Electric_kettle extends Appliances_for_drinks{
     public Electric_kettle(String model, boolean water_level_scale, int water_heating_temperatures,
                            boolean maintaining_temperature, boolean automatic_shutdown,
                                  boolean timer_display, String manufacturer,String colour,
-                                 double weight, String material)
+                                 double weight, String material, double cost, int guarantee)
     {
-        super(maintaining_temperature, automatic_shutdown, timer_display, manufacturer, colour, weight, material);
+        super(maintaining_temperature, automatic_shutdown, timer_display, manufacturer, colour, weight, material, cost, guarantee);
         Model=model;
         Water_level_scale=water_level_scale;
         Water_heating_temperatures=water_heating_temperatures;

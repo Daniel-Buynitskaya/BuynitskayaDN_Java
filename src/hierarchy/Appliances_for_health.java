@@ -10,9 +10,9 @@ public abstract class Appliances_for_health extends Appliances{
         super.getDescription();
     }
     public Appliances_for_health(int number_of_modes, String manufacturer,String colour,
-                                  double weight, String material)
+                                  double weight, String material, double cost, int guarantee)
     {
-        super(manufacturer, colour, weight, material);
+        super(manufacturer, colour, weight, material, cost, guarantee);
         Number_of_modes=number_of_modes;
     }
 }

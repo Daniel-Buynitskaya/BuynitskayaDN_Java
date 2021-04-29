@@ -13,9 +13,9 @@ public abstract class Appliances_for_drinks extends Appliances_for_kitchen {
     }
     public Appliances_for_drinks(boolean maintaining_temperature, boolean automatic_shutdown,
                                  boolean timer_display, String manufacturer,String colour,
-                                  double weight, String material)
+                                  double weight, String material, double cost, int guarantee)
     {
-        super(timer_display, manufacturer, colour, weight, material);
+        super(timer_display, manufacturer, colour, weight, material, cost, guarantee);
         Maintaining_temperature=maintaining_temperature;
         Automatic_shutdown=automatic_shutdown;
     }

@@ -10,9 +10,9 @@ public abstract class Hair_styling_techniques extends Appliances_for_health {
         super.getDescription();
     }
     public Hair_styling_techniques(String ionization, int number_of_modes, String manufacturer,String colour,
-                                 double weight, String material)
+                                 double weight, String material, double cost, int guarantee)
     {
-        super(number_of_modes, manufacturer, colour, weight, material);
+        super(number_of_modes, manufacturer, colour, weight, material, cost, guarantee);
         Ionization=ionization;
     }
 }

@@ -15,9 +15,9 @@ public class Massager extends Massage_technique{
     }
     public Massager(String model, String appointment, String type,
                     String massage_type, boolean infrared_heating, int number_of_modes, String manufacturer,
-                             String colour, double weight, String material)
+                             String colour, double weight, String material, double cost, int guarantee)
     {
-        super(massage_type, infrared_heating, number_of_modes, manufacturer, colour, weight, material);
+        super(massage_type, infrared_heating, number_of_modes, manufacturer, colour, weight, material, cost, guarantee);
         Model=model;
         Appointment=appointment;
         Type=type;

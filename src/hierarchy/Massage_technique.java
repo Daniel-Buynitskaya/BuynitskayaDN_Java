@@ -12,9 +12,9 @@ public abstract class Massage_technique extends Appliances_for_health {
         super.getDescription();
     }
     public Massage_technique(String massage_type, boolean infrared_heating, int number_of_modes, String manufacturer,
-                             String colour, double weight, String material)
+                             String colour, double weight, String material, double cost, int guarantee)
     {
-        super(number_of_modes, manufacturer, colour, weight, material);
+        super(number_of_modes, manufacturer, colour, weight, material, cost, guarantee);
         Massage_type=massage_type;
         Infrared_heating=infrared_heating;
     }

@@ -9,16 +9,23 @@ public abstract class Appliances {
     public double getWeight(){return Weight;}
     private String Material;
     public String getMaterial(){return Material;}
+    private double Cost;
+    public double getCost() {return Cost;}
+    private int Guarantee;
+    public int getGuarantee(){return Guarantee;}
+
     public void getDescription()
     {
-        System.out.printf("\n\t Производитель: %s \n\t Основной цвет: %s \n\t Основной материал: %s \n\t Вес: %s кг",
-                getManufacturer(),getColour(), getMaterial(), getWeight());
+        System.out.printf("\n\t Производитель: %s \n\t Основной цвет: %s \n\t Основной материал: %s \n\t Вес: %s кг \n\n Стоимость: %.2f руб.   Гарантия %s месяцев",
+                getManufacturer(),getColour(), getMaterial(), getWeight(), getCost(), getGuarantee());
     }
-    public Appliances(String manufacturer,String colour, double weight, String material)
+    public Appliances(String manufacturer,String colour, double weight, String material, double cost, int guarantee)
     {
         Manufacturer=manufacturer;
         Colour=colour;
         Weight=weight;
         Material=material;
+        Cost=cost;
+        Guarantee=guarantee;
     }
 }

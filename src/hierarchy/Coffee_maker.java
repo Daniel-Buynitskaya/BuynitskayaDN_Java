@@ -16,9 +16,9 @@ public class Coffee_maker extends Appliances_for_drinks{
     public Coffee_maker(String model, String type, String used_coffee,
                            boolean maintaining_temperature, boolean automatic_shutdown,
                            boolean timer_display, String manufacturer,String colour,
-                           double weight, String material)
+                           double weight, String material, double cost, int guarantee)
     {
-        super(maintaining_temperature, automatic_shutdown, timer_display, manufacturer, colour, weight, material);
+        super(maintaining_temperature, automatic_shutdown, timer_display, manufacturer, colour, weight, material, cost, guarantee);
         Model=model;
         Type=type;
         Used_coffee=used_coffee;

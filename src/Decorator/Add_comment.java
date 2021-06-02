@@ -19,4 +19,6 @@ public class Add_comment extends Decorator{
         System.out.printf("\n Оценка по пятибальной шкале: %s.\n" +
                 " Комментарий: %s", getEvaluation(), getComment());
     }
+    public void DeliveryDescription() {
+    }
 }

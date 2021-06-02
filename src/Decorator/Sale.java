@@ -15,4 +15,6 @@ public class Sale extends Decorator{
         appliances.getDescription();
         System.out.printf("\n Стоимость со скидкой: %.2f руб. Скидка составила %s", getCost(), getSale()+"%");
     }
+    public void DeliveryDescription() {
+    }
 }

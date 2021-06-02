@@ -21,4 +21,7 @@ public class Add_guarantee extends Decorator{
                 "\n Стоимость дополнительной гарантии: %s руб. Итоговая стоимость: %s руб.",
                 getAdd_guarantee(), getGuarantee(), getThis_cost(), getCost());
     }
+
+    public void DeliveryDescription() {
+    }
 }
